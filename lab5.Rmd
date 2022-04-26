@@ -7,6 +7,14 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE)
+
+library(dplyr)
+
+any_drinking <- read.csv('data/any_drinking.csv')
+
+source('R/lab5.R')
 ```
 
+From the any_drinking.csv dataset, we have found that the average drinking rate of both sexes (male and female) in 2002 is about `r find_mean(both_sex_drinking$both_sexes_2002)` and in 2003, it was `r find_mean(both_sex_drinking$both_sexes_2003)`
 
+In the state of Alabama, there are `r county_count("Alabama")` counties
