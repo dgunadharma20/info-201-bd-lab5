@@ -1,0 +1,12 @@
+---
+title: "lab5"
+author: ""
+date: "4/26/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE)
+```
+
+
